@@ -1,11 +1,11 @@
 # Hierarchical Neural Simulation-Based Inference Over Event Ensembles
 
-Lukas Heinrick, Siddharth Mishra-Sharma, Chris Pollard, and Philipp Windischhofer
+Lukas Heinrich, Siddharth Mishra-Sharma, Chris Pollard, and Philipp Windischhofer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![arXiv](https://img.shields.io/badge/arXiv-2306.xxxxx%20-green.svg)](https://arxiv.org/abs/2306.xxxxx)
 
-![Mixture model.](notebooks/plots/mixture.png)
+![Mixture model.](notebooks/plots/combined.png)
 
 ## Abstract
 
