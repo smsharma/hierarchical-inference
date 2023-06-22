@@ -3,8 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![arXiv](https://img.shields.io/badge/arXiv-2306.xxxxx%20-green.svg)](https://arxiv.org/abs/2306.xxxxx)
 
-![MVN.](notebooks/plots/mvn.png)
-![MVN.](notebooks/plots/mixture.png)
+![MVN.](<img src="notebooks/plots/mvn.png" height="100">)
+![MVN.](<img src="notebooks/plots/mixture.png" height="100">)
 
 
 ## Abstract
