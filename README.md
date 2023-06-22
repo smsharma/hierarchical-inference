@@ -1,10 +1,11 @@
 # Hierarchical Neural Simulation-Based Inference Over Event Ensembles
 
+Lukas Heinrick, Siddharth Mishra-Sharma, Chris Pollard, and Philipp Windischhofer
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![arXiv](https://img.shields.io/badge/arXiv-2306.xxxxx%20-green.svg)](https://arxiv.org/abs/2306.xxxxx)
 
 ![Mixture model.](notebooks/plots/mixture.png)
-
 
 ## Abstract
 
@@ -17,8 +18,6 @@ Details for each experiment is given below.
 ### 1. Simple multi-variate normal likelihood
 
 The notebook `notebooks/01_mvn_conjugate_prior.ipynb` can be used to run this experiment in a self-contained manner. The codes `models/deep_set.py` and `models/transformer.py` contain auxiliary code to define the models used.
-
-![Multivariate normal model.](notebooks/plots/mvn.png)
 
 ### 2. Mixture models in particle physics: Bayesian inference for a narrow resonance
 
