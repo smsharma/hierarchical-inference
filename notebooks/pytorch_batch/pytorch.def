@@ -1,0 +1,58 @@
+Bootstrap: docker
+From: nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
+
+%post
+    apt-get -y update
+    apt-get -y install python3 python3-venv python3-pip
+    pip3 install multidict==5.2.0
+    pip3 install typing_extensions==4.1.1
+    pip3 install attrs==22.2.0
+    pip3 install yarl==1.7.2
+    pip3 install absl-py==1.4.0 
+    pip3 install async-timeout==4.0.2
+    pip3 install idna==3.4
+    pip3 install idna-ssl==1.1.0
+    pip3 install charset-normalizer==2.0.12
+    pip3 install asynctest==0.13.0
+    pip3 install cachetools==4.2.4
+    pip3 install certifi==2022.12.7
+    pip3 install dataclasses==0.8
+    pip3 install frozenlist==1.2.0
+    pip3 install fsspec==2022.1.0
+    pip3 install future==0.18.3
+    pip3 install google-auth==2.16.2
+    pip3 install google-auth-oauthlib==0.4.6
+    pip3 install grpcio==1.48.2
+    pip3 install importlib-metadata==4.8.3
+    pip3 install importlib-resources==5.4.0
+    pip3 install Markdown==3.3.7
+    pip3 install oauthlib==3.2.2
+    pip3 install packaging==21.3
+    pip3 install protobuf==3.19.6
+    pip3 install pyasn1==0.4.8
+    pip3 install pyasn1-modules==0.2.8
+    pip3 install pyDeprecate==0.3.1
+    pip3 install pyparsing==3.0.9
+    pip3 install aiosignal==1.2.0 
+    pip3 install requests==2.27.1
+    pip3 install requests-oauthlib==1.3.1
+    pip3 install rsa==4.9
+    pip3 install six==1.16.0
+    pip3 install tqdm==4.64.1 
+    pip3 install urllib3==1.26.15
+    pip3 install Werkzeug==2.0.3
+    pip3 install zipp==3.6.0
+    pip3 install aiohttp==3.8.4 
+    pip3 install tensorboard==2.10.1
+    pip3 install tensorboard-data-server==0.6.1
+    pip3 install tensorboard-plugin-wit==1.8.1
+    pip3 install numpy==1.19.5
+    pip3 install scipy==1.5.4
+    pip3 install torch==1.10.2
+    pip3 install torchmetrics==0.8.2
+    pip3 install pytorch-lightning==1.5.10
+    pip3 install PyYAML==6.0
+
+%environment
+    export LANG=C.UTF-8
+    export LC_ALL=C.UTF-8
