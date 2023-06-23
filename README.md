@@ -3,7 +3,7 @@
 Lukas Heinrich, Siddharth Mishra-Sharma, Chris Pollard, and Philipp Windischhofer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
-[![arXiv](https://img.shields.io/badge/arXiv-2306.xxxxx%20-green.svg)](https://arxiv.org/abs/2306.xxxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-2306.12584%20-green.svg)](https://arxiv.org/abs/2306.12584)
 
 ![Mixture model.](notebooks/plots/combined.png)
 
