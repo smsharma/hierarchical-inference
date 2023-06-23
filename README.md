@@ -51,9 +51,11 @@ The notebook `notebooks/04_FrequentistTrain.ipynb` can be used to run train the 
 
 ## Citation
 
+```
 @article{heinrich2023hierarchical,
   title={Hierarchical Neural Simulation-Based Inference Over Event Ensembles},
   author={Heinrich, Lukas and Mishra-Sharma, Siddharth and Pollard, Chris and Windischhofer, Philipp},
   journal={arXiv preprint arXiv:2306.12584},
   year={2023}
 }
+```
