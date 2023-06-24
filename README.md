@@ -38,15 +38,15 @@ source setup.sh
 * Run deep set training: `notebooks/pytorch_batch/RunTrainingCampaign.py --campaigndir path/to/training/campaign --imagepath `path/to/pytorch.sif`
 * Make comparison plots: Update paths to MCMC and training campaign directories and run `notebooks/10_MCMC_deepset_comparison.ipynb`
 
-### 3. Astrophysics example: Strong gravitational lensing
+### 3. Mixture models in particle physics: frequentist treatment
+
+The notebook `notebooks/04_FrequentistTrain.ipynb` can be used to run train the deepset network used for learning a frequentist test statistic and reproduce Fig. 3. The model is implemented in `models/deep_set_freq.py`.
+
+### 4. Astrophysics example: Strong gravitational lensing
 
 The notebook `notebooks/05_lensing.ipynb` can be used to run this experiment (and reproduce Fig. 6) in a self-contained manner. The notebook runs simulations of lensing images drawn from the forward model, implements the hierarchical deep set for learning global and local parameters simultaneously, and performs inference over local and global parameters. `notebooks/12_lensing_image.ipynb` was used to produce the lensing illustrations in Fig. 5.
 
 ![Lensing model.](notebooks/plots/lensing.png)
-
-### 4. Mixture models in particle physics: frequentist treatment
-
-The notebook `notebooks/04_FrequentistTrain.ipynb` can be used to run train the deepset network used for learning a frequentist test statistic and reproduce Fig. 3. The model is implemented in `models/deep_set_freq.py`.
 
 ## Citation
 
