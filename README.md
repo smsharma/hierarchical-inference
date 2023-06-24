@@ -9,21 +9,21 @@ Lukas Heinrich, Siddharth Mishra-Sharma, Chris Pollard, and Philipp Windischhofe
 
 ## Abstract
 
-When analyzing real-world data it is common to work with event ensembles, which comprise sets of observations that collectively constrain the parameters of an underlying model of interest. Such models often have a hierarchical structure, where "local" parameters impact individual events and "global" parameters influence the entire dataset. We introduce practical approaches for optimal dataset-wide probabilistic inference in cases where the likelihood is intractable, but simulations can be realized via forward modeling. We construct neural estimators for the likelihood(-ratio) or posterior and show that explicitly accounting for the model's hierarchical structure can lead to tighter parameter constraints. We ground our discussion using case studies from the physical sciences, focusing on examples from particle physics (particle collider data) and astrophysics (strong gravitational lensing observations).
+> When analyzing real-world data it is common to work with event ensembles, which comprise sets of observations that collectively constrain the parameters of an underlying model of interest. Such models often have a hierarchical structure, where "local" parameters impact individual events and "global" parameters influence the entire dataset. We introduce practical approaches for optimal dataset-wide probabilistic inference in cases where the likelihood is intractable, but simulations can be realized via forward modeling. We construct neural estimators for the likelihood(-ratio) or posterior and show that explicitly accounting for the model's hierarchical structure can lead to tighter parameter constraints. We ground our discussion using case studies from the physical sciences, focusing on examples from particle physics (particle collider data) and astrophysics (strong gravitational lensing observations).
 
 ## Code
 
-Details for each experiment is given below.
+Details for reproducing each experiment are given below.
 
 ### 1. Simple multi-variate normal likelihood
 
-The notebook `notebooks/01_mvn_conjugate_prior.ipynb` can be used to run this experiment in a self-contained manner. The codes `models/deep_set.py` and `models/transformer.py` contain auxiliary code to define the models used.
+The notebook `notebooks/01_mvn_conjugate_prior.ipynb` can be used to run this experiment (and reproduce Fig. 2) in a self-contained manner. The codes `models/deep_set.py` and `models/transformer.py` contain auxiliary code to define the models used.
 
 ### 2. Mixture models in particle physics: Bayesian inference for a narrow resonance
 
-To reproduce Fig. 3 (left): run `notebooks/11_bump_hunt_plots.ipynb`
+To reproduce Fig. 4 (left): run `notebooks/11_bump_hunt_plots.ipynb`
 
-To reproduce Fig. 3 (center, right): The below instructions assume access to a `condor` batch system supporting `singularity`.
+To reproduce Fig. 4 (center, right): The below instructions assume access to a `condor` batch system supporting `singularity`.
 
 * Setup `singularity` images:
 ```
@@ -40,14 +40,13 @@ source setup.sh
 
 ### 3. Astrophysics example: Strong gravitational lensing
 
-The notebook `notebooks/05_lensing.ipynb` can be used to run this experiment in a self-contained manner. The notebook runs simulations of 
-lensing images drawn from the forward model, implements the hierarchical deep set for learning global and local parameters simultaneously, and performs inference over local and global parameters. `notebooks/12_lensing_image.ipynb` was used to produce the lensing illustrations.
+The notebook `notebooks/05_lensing.ipynb` can be used to run this experiment (and reproduce Fig. 6) in a self-contained manner. The notebook runs simulations of lensing images drawn from the forward model, implements the hierarchical deep set for learning global and local parameters simultaneously, and performs inference over local and global parameters. `notebooks/12_lensing_image.ipynb` was used to produce the lensing illustrations in Fig. 5.
 
 ![Lensing model.](notebooks/plots/lensing.png)
 
 ### 4. Mixture models in particle physics: frequentist treatment
 
-The notebook `notebooks/04_FrequentistTrain.ipynb` can be used to run train the deepset network used for learning a frequentist test statistic. The model is implemented in `models/deep_set_freq.py`.
+The notebook `notebooks/04_FrequentistTrain.ipynb` can be used to run train the deepset network used for learning a frequentist test statistic and reproduce Fig. 3. The model is implemented in `models/deep_set_freq.py`.
 
 ## Citation
 
